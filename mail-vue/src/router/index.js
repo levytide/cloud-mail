@@ -188,7 +188,7 @@ function removeLoading() {
         setTimeout(() => {
             doc.remove()
         }, 1000)
-    }, 100)
+    }, 300)
 }
 
 export default router
