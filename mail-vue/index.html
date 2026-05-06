@@ -97,6 +97,18 @@
     animation: loading-progress-peg 2.4s linear forwards;
   }
 
+  .loading-complete .loading-progress::before {
+    animation: none;
+    transform: scaleX(1);
+    transition: transform 100ms linear;
+  }
+
+  .loading-complete .loading-progress::after {
+    animation: none;
+    transform: translateX(60px);
+    transition: transform 100ms linear;
+  }
+
   @keyframes loading-progress-grow {
     0% {
       transform: scaleX(0);
